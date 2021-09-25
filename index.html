@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Code challenge Sept 2021</title>
+        <link rel="stylesheet" type="text/css" href="./styles/layout/general.css">
+    </head>
+    <body>
+        <header class="cart-header">
+            <div class="branding">
+                <!-- logo --></div>
+            <h1 class="page-title">Your Shopping Cart</h1>
+        </header>
+        <main class="cart-main">
+            <div class="cart-item-wrap">
+                <div class="cart-item">
+                    <div class="item-image"></div>
+                    <div class="item-info">
+                        <p class="item-title">Denim T-shirt</p>
+                        <p class="item-ref">Ref 0293570971</p>
+                    </div>
+                    <div class="item-color">Blue</div>
+                    <div class="item-quantity-wrap">
+                        <input type="number" class="item-quantity" id="item-quantity">
+                        <button class="quantity-increase">
+                            <!-- up icon --></button>
+                        <button class="quantity-decrease">
+                            <!-- down icon --></button>
+                    </div>
+                    <div class="item-price">7500.00</div>
+                </div>
+                <div class="item-remove"></div>
+            </div>
+            <div class="cart-item-wrap">
+                <div class="cart-item">
+                    <div class="item-image"></div>
+                    <div class="item-info">
+                        <p class="item-title">Denim Pants</p>
+                        <p class="item-ref">Ref 24587389521</p>
+                    </div>
+                    <div class="item-color">Blue</div>
+                    <div class="item-quantity-wrap">
+                        <input type="number" class="item-quantity" id="item-quantity">
+                        <button class="quantity-increase">
+                            <!-- up icon --></button>
+                        <button class="quantity-decrease">
+                            <!-- down icon --></button>
+                    </div>
+                    <div class="item-price">9000.00</div>
+                </div>
+                <div class="item-remove"></div>
+            </div>
+            <div class="cart-item-wrap">
+                <div class="cart-item">
+                    <div class="item-image"></div>
+                    <div class="item-info">
+                        <p class="item-title">Sony Smartwatch</p>
+                        <p class="item-ref">Ref 98623985729</p>
+                    </div>
+                    <div class="item-color">Black</div>
+                    <div class="item-quantity-wrap">
+                        <input type="number" class="item-quantity" id="item-quantity">
+                        <button class="quantity-increase">
+                            <!-- up icon --></button>
+                        <button class="quantity-decrease">
+                            <!-- down icon --></button>
+                    </div>
+                    <div class="item-price">24500.00</div>
+                </div>
+                <div class="item-remove"></div>
+            </div>
+            <div class="cart-item-wrap">
+                <div class="cart-item">
+                    <div class="item-image"></div>
+                    <div class="item-info">
+                        <p class="item-title">Cognac Oxford</p>
+                        <p class="item-ref">Ref 9826359826</p>
+                    </div>
+                    <div class="item-color">Brown</div>
+                    <div class="item-quantity-wrap">
+                        <input type="number" class="item-quantity" id="item-quantity">
+                        <button class="quantity-increase">
+                            <!-- up icon --></button>
+                        <button class="quantity-decrease">
+                            <!-- down icon --></button>
+                    </div>
+                    <div class="item-price">7500.00</div>
+                </div>
+                <div class="item-remove"></div>
+            </div>
+        </main>
+        <aside class="cart-checkout-stepper">
+            <div class="stepper-display-wrap">
+                <button class="stepper-display-item">
+                    <!-- stepper dot icon --></button>
+                <button class="stepper-display-item">
+                    <!-- stepper dot icon --></button>
+                <button class="stepper-display-item">
+                    <!-- stepper dot icon --></button>
+            </div>
+            <form>
+                <div class="stepper-pages-wrap">
+                    <div class="stepper-shipping-address">
+                        <!-- Not filling out yet --></div>
+                    <div class="stepper-card-details">
+                        <h2 class="stepper-title"></h2>
+                        <div class="stepper-page-wrap">
+                            <div class="stepper-page-item">
+                                <div class="stepper-item-title">Select Card Type</div>
+                                <select id="card-type">
+                                    <option value="visa">Visa</option>
+                                    <option value="mastercard">MasterCard</option>
+                                    <option value="amex">Amex</option>
+                                </select>
+                            </div>
+                            <div class="stepper-page-item">
+                                <div class="stepper-item-title">Card Number</div>
+                                <input type="number" id="card-number">
+                            </div>
+                            <div class="stepper-page-item">
+                                <div class="stepper-item-title">Expiry Date</div>
+                                <input type="number" id="card-exp-year">
+                                /
+                                <input type="number" id="card-exp-month">
+                                /
+                                <input type="number" id="card-exp-day">
+                            </div>
+                            <div class="stepper-page-item">
+                                <div class="stepper-item-title">CW</div>
+                                <input type="number" id="card-cw">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stepper-billing-info">
+                        <!-- Not filling out yet --></div>
+                </div class="stepper-pages-wrap">
+                <button class="stepper-action"></button>
+            </form>
+        </aside>
+        <section class="validation-modal">
+            Loading...
+        </section>
+        <footer class="cart-footer">
+            <div class="back-link">Back to Shop</div>
+            <div class="subtotal-display">45500.00</div>
+        </footer>
+    </body>
+</html>
